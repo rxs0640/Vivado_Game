@@ -1,0 +1,638 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Nov 24 20:48:23 2016
+# Process ID: 4404
+# Current directory: C:/Users/Roger/Documents/Homework/ECE415/self_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11944 C:\Users\Roger\Documents\Homework\ECE415\self_proj\self_proj.xpr
+# Log file: C:/Users/Roger/Documents/Homework/ECE415/self_proj/vivado.log
+# Journal file: C:/Users/Roger/Documents/Homework/ECE415/self_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 824.520 ; gain = 136.359
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse C:/Users/Roger/Documents/Homework/ECE415/self_proj/Nexys4DDR_Master.xdc
+set_property is_enabled false [get_files  C:/Users/Roger/Documents/Homework/ECE415/self_proj/Nexys4_Master.xdc]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 20:54:16 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 20:54:16 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 858.441 ; gain = 0.000
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 20:57:01 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 858.441 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292743139A
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 20:59:41 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 20:59:41 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 21:13:08 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 21:13:08 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 21:20:22 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 21:20:22 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 21:24:02 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 21:24:02 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 21:33:58 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 21:33:58 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 21:37:14 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 21:37:14 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 21:41:48 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 21:41:48 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 21:42:24 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 21:42:24 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 22:21:04 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 22:21:04 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 22:25:26 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 22:25:26 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 22:35:50 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 22:35:50 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 22:39:22 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 22:39:22 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 22:43:27 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 22:43:27 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 22:47:28 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 22:47:28 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 23:18:29 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 23:18:29 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 23:21:31 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 23:21:31 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 23:29:39 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 23:29:39 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 23:32:51 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 23:32:51 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 23:38:11 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 23:38:11 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 23:41:15 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 23:41:15 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 23:45:07 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 23:45:07 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 24 23:57:23 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Thu Nov 24 23:57:23 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 00:01:31 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 00:01:31 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 00:05:45 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 00:05:45 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 00:09:09 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 00:09:10 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 00:15:27 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 00:15:27 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 00:23:17 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 00:23:17 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 00:34:22 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 00:34:22 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 00:44:19 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 00:44:19 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 00:47:35 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 00:47:35 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 00:52:54 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 00:52:54 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 00:55:38 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 00:55:38 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 00:59:27 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 00:59:27 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 00:59:46 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 00:59:46 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 01:05:45 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 01:05:45 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 01:13:22 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 01:13:22 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 01:19:33 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 01:19:33 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 01:33:16 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 01:33:16 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Nov 25 01:33:50 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/runme.log
+[Fri Nov 25 01:33:50 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/impl_1/self_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 25 02:26:53 2016...

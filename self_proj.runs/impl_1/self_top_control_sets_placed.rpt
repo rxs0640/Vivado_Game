@@ -1,0 +1,85 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Tue Nov 29 15:08:56 2016
+| Host         : DESKTOP-PBAKCEM running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file self_top_control_sets_placed.rpt
+| Design       : self_top
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    32 |
+| Unused register locations in slices containing registers |    89 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             214 |           96 |
+| No           | No                    | Yes                    |              23 |            8 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               4 |            2 |
+| Yes          | No                    | Yes                    |              86 |           32 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+-------------------------------+------------------+------------------+----------------+
+|                   Clock Signal                  |         Enable Signal         | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-------------------------------------------------+-------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG                                  |                               |                  |                1 |              1 |
+|  ps2_unit/f0flag_reg[0]_0                       | ps2_unit/E[0]                 | reset_IBUF       |                2 |              4 |
+|  clk_50m_BUFG                                   | ps2_unit/n_reg[3]_i_1_n_0     | reset_IBUF       |                1 |              4 |
+|  clk_IBUF_BUFG                                  | vsync_unit/E[0]               |                  |                2 |              4 |
+|  vsync_unit/rgb_reg_reg[10]_51                  |                               |                  |                3 |              6 |
+|  vsync_unit/rgb_reg_reg[10]_55                  |                               |                  |                3 |              6 |
+| ~vsync_unit/rgb_reg_reg[10]_55                  |                               |                  |                3 |              6 |
+|  vsync_unit/rgb_reg_reg[10]_36[0]               |                               |                  |                3 |              6 |
+|  vsync_unit/rgb_reg_reg[10]_3                   |                               |                  |                3 |              7 |
+|  vsync_unit/rgb_reg_reg[10]_30                  |                               |                  |                2 |              7 |
+|  vsync_unit/rgb_reg_reg[10]_9                   |                               |                  |                3 |              7 |
+|  vsync_unit/rgb_reg_reg[10]_29[0]               |                               |                  |                3 |              7 |
+|  vsync_unit/rgb_reg_reg[10]_35[0]               |                               |                  |                4 |              7 |
+|  vsync_unit/rgb_reg_reg[10]_39[0]               |                               |                  |                4 |              7 |
+|  vsync_unit/rgb_reg_reg[10]_40[0]               |                               |                  |                2 |              7 |
+|  pixel_y_BUFG[4]                                |                               |                  |                5 |              7 |
+|  ps2_unit/f0flag_reg[0]_0                       |                               | reset_IBUF       |                3 |              9 |
+|  clk_50m_BUFG                                   | ps2_unit/b_reg[10]_i_1_n_0    | reset_IBUF       |                2 |             10 |
+|  clk_50m_BUFG                                   | vsync_unit/E[0]               | reset_IBUF       |                4 |             10 |
+|  clk_50m_BUFG                                   | vsync_unit/v_count_reg0       | reset_IBUF       |                5 |             11 |
+|  vsync_unit/rgb_reg_reg[10]_6                   |                               |                  |                5 |             12 |
+|  vsync_unit/rgb_reg_reg[10]_1                   |                               |                  |                7 |             13 |
+| ~vsync_unit/rgb_reg_reg[10]_1                   |                               |                  |                5 |             13 |
+| ~vsync_unit/rgb_reg_reg[10]_3                   |                               |                  |                6 |             13 |
+| ~vsync_unit/rgb_reg_reg[10]_6                   |                               |                  |                7 |             13 |
+| ~vsync_unit/an_unit/s4u/spikeu_rom_addr3_out[4] |                               |                  |                4 |             13 |
+|  vsync_unit/rgb_reg_reg[10]_15[0]               |                               |                  |                6 |             13 |
+|  clk_50m_BUFG                                   |                               | reset_IBUF       |                5 |             14 |
+|  vsync_unit/rgb_reg_reg[10]_21[0]               |                               |                  |                8 |             19 |
+|  clk_50m_BUFG                                   | an_unit/char_y_reg[9]_i_1_n_0 | reset_IBUF       |                9 |             23 |
+|  clk_50m_BUFG                                   |                               |                  |                9 |             24 |
+|  clk_50m_BUFG                                   | an_unit/sel                   | reset_IBUF       |                9 |             24 |
++-------------------------------------------------+-------------------------------+------------------+------------------+----------------+
+
+

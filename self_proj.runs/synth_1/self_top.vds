@@ -1,0 +1,1298 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Nov 29 15:06:09 2016
+# Process ID: 1584
+# Current directory: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1
+# Command line: vivado.exe -log self_top.vds -mode batch -messageDb vivado.pb -notrace -source self_top.tcl
+# Log file: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1/self_top.vds
+# Journal file: C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source self_top.tcl -notrace
+Command: synth_design -top self_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2332 
+WARNING: [Synth 8-976] vcounter1_bit has already been declared [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:1368]
+WARNING: [Synth 8-2654] second declaration of vcounter1_bit ignored [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:1368]
+INFO: [Synth 8-994] vcounter1_bit is declared here [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:592]
+WARNING: [Synth 8-976] vcounter10_bit has already been declared [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:1374]
+WARNING: [Synth 8-2654] second declaration of vcounter10_bit ignored [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:1374]
+INFO: [Synth 8-994] vcounter10_bit is declared here [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:591]
+WARNING: [Synth 8-976] dcounter1_bit has already been declared [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:1380]
+WARNING: [Synth 8-2654] second declaration of dcounter1_bit ignored [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:1380]
+INFO: [Synth 8-994] dcounter1_bit is declared here [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:594]
+WARNING: [Synth 8-976] dcounter10_bit has already been declared [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:1386]
+WARNING: [Synth 8-2654] second declaration of dcounter10_bit ignored [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:1386]
+INFO: [Synth 8-994] dcounter10_bit is declared here [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:593]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 280.973 ; gain = 72.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'self_top' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_top.v:24]
+INFO: [Synth 8-638] synthesizing module 'clk_50m_generator' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/clk_50m_generator.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clk_50m_generator' (1#1) [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/clk_50m_generator.v:23]
+INFO: [Synth 8-638] synthesizing module 'ps2_rx' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/ps2_rx.v:1]
+	Parameter idle bound to: 2'b00 
+	Parameter dps bound to: 2'b01 
+	Parameter load bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/ps2_rx.v:66]
+INFO: [Synth 8-256] done synthesizing module 'ps2_rx' (2#1) [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/ps2_rx.v:1]
+INFO: [Synth 8-638] synthesizing module 'seg7decimal' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/Seg_7_Display.v:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/Seg_7_Display.v:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/Seg_7_Display.v:66]
+INFO: [Synth 8-256] done synthesizing module 'seg7decimal' (3#1) [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/Seg_7_Display.v:21]
+WARNING: [Synth 8-689] width (1) of port connection 'y' does not match port width (8) of module 'seg7decimal' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_top.v:101]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/vga_sync.v:23]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 48 - type: integer 
+	Parameter HB bound to: 16 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (4#1) [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/vga_sync.v:23]
+INFO: [Synth 8-638] synthesizing module 'self_anim' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:24]
+	Parameter MAX_X bound to: 640 - type: integer 
+	Parameter MAX_Y bound to: 480 - type: integer 
+	Parameter VEL_P bound to: 2 - type: integer 
+	Parameter VEL_N bound to: -2 - type: integer 
+	Parameter JUMP_H bound to: 80 - type: integer 
+	Parameter WALL_SIZE bound to: 10 - type: integer 
+	Parameter SPIKE_SIZE bound to: 15 - type: integer 
+	Parameter CHAR_SIZE bound to: 13 - type: integer 
+	Parameter WALL_Y_B1 bound to: 480 - type: integer 
+	Parameter WALL_Y_T1 bound to: 470 - type: integer 
+	Parameter WALL_X_L1 bound to: 0 - type: integer 
+	Parameter WALL_X_R1 bound to: 10 - type: integer 
+	Parameter WALL_X_L2 bound to: 630 - type: integer 
+	Parameter WALL_X_R2 bound to: 640 - type: integer 
+	Parameter START_PLAT_B bound to: 470 - type: integer 
+	Parameter START_PLAT_T bound to: 400 - type: integer 
+	Parameter START_PLAT_L bound to: 0 - type: integer 
+	Parameter START_PLAT_R bound to: 40 - type: integer 
+	Parameter R_STAIR2_B bound to: 470 - type: integer 
+	Parameter R_STAIR2_T bound to: 430 - type: integer 
+	Parameter R_STAIR2_R bound to: 630 - type: integer 
+	Parameter R_STAIR2_L bound to: 589 - type: integer 
+	Parameter R_STAIR_B bound to: 470 - type: integer 
+	Parameter R_STAIR_T bound to: 450 - type: integer 
+	Parameter R_STAIR_R bound to: 589 - type: integer 
+	Parameter R_STAIR_L bound to: 548 - type: integer 
+	Parameter C_PLATR_B bound to: 425 - type: integer 
+	Parameter C_PLATR_T bound to: 405 - type: integer 
+	Parameter C_PLATR_R bound to: 509 - type: integer 
+	Parameter C_PLATR_L bound to: 359 - type: integer 
+	Parameter C_PLATS2_B bound to: 405 - type: integer 
+	Parameter C_PLATS2_T bound to: 385 - type: integer 
+	Parameter C_PLATS2_R bound to: 468 - type: integer 
+	Parameter C_PLATS2_L bound to: 427 - type: integer 
+	Parameter C_PLATS_B bound to: 405 - type: integer 
+	Parameter C_PLATS_T bound to: 365 - type: integer 
+	Parameter C_PLATS_R bound to: 427 - type: integer 
+	Parameter C_PLATS_L bound to: 386 - type: integer 
+	Parameter S_BOX_B bound to: 390 - type: integer 
+	Parameter S_BOX_T bound to: 375 - type: integer 
+	Parameter S_BOX_R bound to: 329 - type: integer 
+	Parameter S_BOX_L bound to: 314 - type: integer 
+	Parameter C_PLATL_B bound to: 425 - type: integer 
+	Parameter C_PLATL_T bound to: 408 - type: integer 
+	Parameter C_PLATL_R bound to: 279 - type: integer 
+	Parameter C_PLATL_L bound to: 93 - type: integer 
+	Parameter C_PLATL2_B bound to: 408 - type: integer 
+	Parameter C_PLATL2_T bound to: 391 - type: integer 
+	Parameter C_PLATL2_R bound to: 279 - type: integer 
+	Parameter C_PLATL2_L bound to: 138 - type: integer 
+	Parameter C_PLATLS_B bound to: 391 - type: integer 
+	Parameter C_PLATLS_T bound to: 371 - type: integer 
+	Parameter C_PLATLS_R bound to: 251 - type: integer 
+	Parameter C_PLATLS_L bound to: 210 - type: integer 
+	Parameter L_SQ1_B bound to: 371 - type: integer 
+	Parameter L_SQ1_T bound to: 351 - type: integer 
+	Parameter L_SQ1_R bound to: 180 - type: integer 
+	Parameter L_SQ1_L bound to: 139 - type: integer 
+	Parameter L_SQ2_B bound to: 351 - type: integer 
+	Parameter L_SQ2_T bound to: 331 - type: integer 
+	Parameter L_SQ2_R bound to: 139 - type: integer 
+	Parameter L_SQ2_L bound to: 93 - type: integer 
+	Parameter TL_PLAT_B bound to: 331 - type: integer 
+	Parameter TL_PLAT_T bound to: 311 - type: integer 
+	Parameter TL_PLAT_R bound to: 93 - type: integer 
+	Parameter TL_PLAT_L bound to: 10 - type: integer 
+	Parameter TL_BOX_B bound to: 231 - type: integer 
+	Parameter TL_BOX_T bound to: 0 - type: integer 
+	Parameter TL_BOX_R bound to: 279 - type: integer 
+	Parameter TL_BOX_L bound to: 10 - type: integer 
+	Parameter T_PLATL_B bound to: 311 - type: integer 
+	Parameter T_PLATL_T bound to: 291 - type: integer 
+	Parameter T_PLATL_L bound to: 123 - type: integer 
+	Parameter T_PLATL_R bound to: 279 - type: integer 
+	Parameter T_PLATR_B bound to: 291 - type: integer 
+	Parameter T_PLATR_T bound to: 271 - type: integer 
+	Parameter T_PLATR_L bound to: 309 - type: integer 
+	Parameter T_PLATR_R bound to: 509 - type: integer 
+	Parameter T_PLATRS_B bound to: 271 - type: integer 
+	Parameter T_PLATRS_T bound to: 231 - type: integer 
+	Parameter T_PLATRS_L bound to: 427 - type: integer 
+	Parameter T_PLATRS_R bound to: 468 - type: integer 
+	Parameter T_PLATRS2_B bound to: 271 - type: integer 
+	Parameter T_PLATRS2_T bound to: 251 - type: integer 
+	Parameter T_PLATRS2_R bound to: 427 - type: integer 
+	Parameter T_PLATRS2_L bound to: 386 - type: integer 
+	Parameter TR_BOX_B bound to: 291 - type: integer 
+	Parameter TR_BOX_T bound to: 211 - type: integer 
+	Parameter TR_BOX_R bound to: 630 - type: integer 
+	Parameter TR_BOX_L bound to: 548 - type: integer 
+	Parameter END_PLAT_B bound to: 161 - type: integer 
+	Parameter END_PLAT_T bound to: 151 - type: integer 
+	Parameter END_PLAT_R bound to: 630 - type: integer 
+	Parameter END_PLAT_L bound to: 589 - type: integer 
+	Parameter WALL_Y_B2 bound to: 101 - type: integer 
+	Parameter WALL_Y_T2 bound to: 0 - type: integer 
+	Parameter WINTEXT_X_L bound to: 30 - type: integer 
+	Parameter WINTEXT_X_R bound to: 75 - type: integer 
+	Parameter WINTEXT_Y_T bound to: 30 - type: integer 
+	Parameter WINTEXT_Y_B bound to: 46 - type: integer 
+	Parameter DIEDTEXT_X_L bound to: 30 - type: integer 
+	Parameter DIEDTEXT_X_R bound to: 75 - type: integer 
+	Parameter DIEDTEXT_Y_T bound to: 66 - type: integer 
+	Parameter DIEDTEXT_Y_B bound to: 82 - type: integer 
+	Parameter VCOUNTER10_X_L bound to: 95 - type: integer 
+	Parameter VCOUNTER10_X_R bound to: 102 - type: integer 
+	Parameter VCOUNTER10_Y_T bound to: 30 - type: integer 
+	Parameter VCOUNTER10_Y_B bound to: 46 - type: integer 
+	Parameter VCOUNTER1_X_L bound to: 117 - type: integer 
+	Parameter VCOUNTER1_X_R bound to: 124 - type: integer 
+	Parameter VCOUNTER1_Y_T bound to: 30 - type: integer 
+	Parameter VCOUNTER1_Y_B bound to: 46 - type: integer 
+	Parameter DCOUNTER10_X_L bound to: 95 - type: integer 
+	Parameter DCOUNTER10_X_R bound to: 102 - type: integer 
+	Parameter DCOUNTER10_Y_T bound to: 66 - type: integer 
+	Parameter DCOUNTER10_Y_B bound to: 82 - type: integer 
+	Parameter DCOUNTER1_X_L bound to: 117 - type: integer 
+	Parameter DCOUNTER1_X_R bound to: 124 - type: integer 
+	Parameter DCOUNTER1_Y_T bound to: 66 - type: integer 
+	Parameter DCOUNTER1_Y_B bound to: 82 - type: integer 
+	Parameter SBOXD_Y_T bound to: 390 - type: integer 
+	Parameter SBOXD_Y_B bound to: 405 - type: integer 
+	Parameter SBOXD_X_L bound to: 316 - type: integer 
+	Parameter SBOXD_X_R bound to: 331 - type: integer 
+	Parameter SBOXU_Y_B bound to: 375 - type: integer 
+	Parameter SBOXU_Y_T bound to: 360 - type: integer 
+	Parameter SBOXU_X_L bound to: 316 - type: integer 
+	Parameter SBOXU_X_R bound to: 331 - type: integer 
+	Parameter SBOXL_X_R bound to: 317 - type: integer 
+	Parameter SBOXL_X_L bound to: 302 - type: integer 
+	Parameter SBOXL_Y_B bound to: 390 - type: integer 
+	Parameter SBOXL_Y_T bound to: 375 - type: integer 
+	Parameter SBOXR_X_L bound to: 329 - type: integer 
+	Parameter SBOXR_X_R bound to: 344 - type: integer 
+	Parameter SBOXR_Y_B bound to: 390 - type: integer 
+	Parameter SBOXR_Y_T bound to: 375 - type: integer 
+	Parameter SPIKE1D_Y_T bound to: 425 - type: integer 
+	Parameter SPIKE1D_Y_B bound to: 440 - type: integer 
+	Parameter SPIKE1D_X_L bound to: 95 - type: integer 
+	Parameter SPIKE1D_X_R bound to: 110 - type: integer 
+	Parameter SPIKE1U_Y_B bound to: 470 - type: integer 
+	Parameter SPIKE1U_Y_T bound to: 455 - type: integer 
+	Parameter SPIKE1U_X_L bound to: 155 - type: integer 
+	Parameter SPIKE1U_X_R bound to: 170 - type: integer 
+	Parameter SPIKE2D_Y_T bound to: 425 - type: integer 
+	Parameter SPIKE2D_Y_B bound to: 440 - type: integer 
+	Parameter SPIKE2D_X_L bound to: 215 - type: integer 
+	Parameter SPIKE2D_X_R bound to: 230 - type: integer 
+	Parameter SPIKE2U_Y_B bound to: 470 - type: integer 
+	Parameter SPIKE2U_Y_T bound to: 455 - type: integer 
+	Parameter SPIKE2U_X_L bound to: 275 - type: integer 
+	Parameter SPIKE2U_X_R bound to: 290 - type: integer 
+	Parameter SPIKE3D_Y_T bound to: 425 - type: integer 
+	Parameter SPIKE3D_Y_B bound to: 440 - type: integer 
+	Parameter SPIKE3D_X_L bound to: 361 - type: integer 
+	Parameter SPIKE3D_X_R bound to: 376 - type: integer 
+	Parameter SPIKE3U_Y_B bound to: 470 - type: integer 
+	Parameter SPIKE3U_Y_T bound to: 455 - type: integer 
+	Parameter SPIKE3U_X_L bound to: 421 - type: integer 
+	Parameter SPIKE3U_X_R bound to: 436 - type: integer 
+	Parameter SPIKE4D_Y_T bound to: 425 - type: integer 
+	Parameter SPIKE4D_Y_B bound to: 440 - type: integer 
+	Parameter SPIKE4D_X_L bound to: 481 - type: integer 
+	Parameter SPIKE4D_X_R bound to: 496 - type: integer 
+	Parameter SPIKE1L_X_R bound to: 633 - type: integer 
+	Parameter SPIKE1L_X_L bound to: 618 - type: integer 
+	Parameter SPIKE1L_Y_B bound to: 427 - type: integer 
+	Parameter SPIKE1L_Y_T bound to: 412 - type: integer 
+	Parameter SPIKE2L_X_R bound to: 633 - type: integer 
+	Parameter SPIKE2L_X_L bound to: 618 - type: integer 
+	Parameter SPIKE2L_Y_B bound to: 409 - type: integer 
+	Parameter SPIKE2L_Y_T bound to: 394 - type: integer 
+	Parameter SPIKE3L_X_R bound to: 633 - type: integer 
+	Parameter SPIKE3L_X_L bound to: 618 - type: integer 
+	Parameter SPIKE3L_Y_B bound to: 391 - type: integer 
+	Parameter SPIKE3L_Y_T bound to: 376 - type: integer 
+	Parameter SPIKE4L_X_R bound to: 633 - type: integer 
+	Parameter SPIKE4L_X_L bound to: 618 - type: integer 
+	Parameter SPIKE4L_Y_B bound to: 373 - type: integer 
+	Parameter SPIKE4L_Y_T bound to: 358 - type: integer 
+	Parameter SPIKE5L_X_R bound to: 633 - type: integer 
+	Parameter SPIKE5L_X_L bound to: 618 - type: integer 
+	Parameter SPIKE5L_Y_B bound to: 355 - type: integer 
+	Parameter SPIKE5L_Y_T bound to: 340 - type: integer 
+	Parameter SPIKE6L_X_R bound to: 633 - type: integer 
+	Parameter SPIKE6L_X_L bound to: 618 - type: integer 
+	Parameter SPIKE6L_Y_B bound to: 337 - type: integer 
+	Parameter SPIKE6L_Y_T bound to: 322 - type: integer 
+	Parameter SPIKE7L_X_R bound to: 633 - type: integer 
+	Parameter SPIKE7L_X_L bound to: 618 - type: integer 
+	Parameter SPIKE7L_Y_B bound to: 319 - type: integer 
+	Parameter SPIKE7L_Y_T bound to: 304 - type: integer 
+	Parameter SPIKE8L_X_R bound to: 633 - type: integer 
+	Parameter SPIKE8L_X_L bound to: 618 - type: integer 
+	Parameter SPIKE8L_Y_B bound to: 301 - type: integer 
+	Parameter SPIKE8L_Y_T bound to: 286 - type: integer 
+	Parameter SPIKE5D_Y_T bound to: 291 - type: integer 
+	Parameter SPIKE5D_Y_B bound to: 306 - type: integer 
+	Parameter SPIKE5D_X_R bound to: 615 - type: integer 
+	Parameter SPIKE5D_X_L bound to: 600 - type: integer 
+	Parameter SPIKE6D_Y_T bound to: 291 - type: integer 
+	Parameter SPIKE6D_Y_B bound to: 306 - type: integer 
+	Parameter SPIKE6D_X_R bound to: 600 - type: integer 
+	Parameter SPIKE6D_X_L bound to: 585 - type: integer 
+	Parameter SPIKE7D_Y_T bound to: 291 - type: integer 
+	Parameter SPIKE7D_Y_B bound to: 306 - type: integer 
+	Parameter SPIKE7D_X_R bound to: 585 - type: integer 
+	Parameter SPIKE7D_X_L bound to: 570 - type: integer 
+	Parameter SPIKE8D_Y_T bound to: 291 - type: integer 
+	Parameter SPIKE8D_Y_B bound to: 306 - type: integer 
+	Parameter SPIKE8D_X_R bound to: 570 - type: integer 
+	Parameter SPIKE8D_X_L bound to: 555 - type: integer 
+	Parameter SPIKE4U_Y_B bound to: 365 - type: integer 
+	Parameter SPIKE4U_Y_T bound to: 350 - type: integer 
+	Parameter SPIKE4U_X_L bound to: 386 - type: integer 
+	Parameter SPIKE4U_X_R bound to: 401 - type: integer 
+	Parameter SPIKE5U_Y_B bound to: 391 - type: integer 
+	Parameter SPIKE5U_Y_T bound to: 376 - type: integer 
+	Parameter SPIKE5U_X_R bound to: 207 - type: integer 
+	Parameter SPIKE5U_X_L bound to: 192 - type: integer 
+	Parameter SPIKE9D_Y_T bound to: 371 - type: integer 
+	Parameter SPIKE9D_Y_B bound to: 386 - type: integer 
+	Parameter SPIKE9D_X_L bound to: 154 - type: integer 
+	Parameter SPIKE9D_X_R bound to: 169 - type: integer 
+	Parameter SPIKE6U_Y_B bound to: 408 - type: integer 
+	Parameter SPIKE6U_Y_T bound to: 393 - type: integer 
+	Parameter SPIKE6U_X_R bound to: 135 - type: integer 
+	Parameter SPIKE6U_X_L bound to: 120 - type: integer 
+	Parameter SPIKE7U_Y_B bound to: 408 - type: integer 
+	Parameter SPIKE7U_Y_T bound to: 393 - type: integer 
+	Parameter SPIKE7U_X_R bound to: 117 - type: integer 
+	Parameter SPIKE7U_X_L bound to: 102 - type: integer 
+	Parameter SPIKE10D_Y_T bound to: 331 - type: integer 
+	Parameter SPIKE10D_Y_B bound to: 346 - type: integer 
+	Parameter SPIKE10D_X_L bound to: 13 - type: integer 
+	Parameter SPIKE10D_X_R bound to: 28 - type: integer 
+	Parameter SPIKE11D_Y_T bound to: 331 - type: integer 
+	Parameter SPIKE11D_Y_B bound to: 346 - type: integer 
+	Parameter SPIKE11D_X_L bound to: 28 - type: integer 
+	Parameter SPIKE11D_X_R bound to: 43 - type: integer 
+	Parameter SPIKE12D_Y_T bound to: 331 - type: integer 
+	Parameter SPIKE12D_Y_B bound to: 346 - type: integer 
+	Parameter SPIKE12D_X_L bound to: 43 - type: integer 
+	Parameter SPIKE12D_X_R bound to: 58 - type: integer 
+	Parameter SPIKE13D_Y_T bound to: 331 - type: integer 
+	Parameter SPIKE13D_Y_B bound to: 346 - type: integer 
+	Parameter SPIKE13D_X_L bound to: 58 - type: integer 
+	Parameter SPIKE13D_X_R bound to: 73 - type: integer 
+	Parameter SPIKE14D_Y_T bound to: 331 - type: integer 
+	Parameter SPIKE14D_Y_B bound to: 346 - type: integer 
+	Parameter SPIKE14D_X_L bound to: 73 - type: integer 
+	Parameter SPIKE14D_X_R bound to: 88 - type: integer 
+	Parameter SPIKE9L_X_R bound to: 362 - type: integer 
+	Parameter SPIKE9L_X_L bound to: 347 - type: integer 
+	Parameter SPIKE9L_Y_B bound to: 422 - type: integer 
+	Parameter SPIKE9L_Y_T bound to: 407 - type: integer 
+	Parameter SPIKE1R_X_L bound to: 279 - type: integer 
+	Parameter SPIKE1R_X_R bound to: 294 - type: integer 
+	Parameter SPIKE1R_Y_B bound to: 425 - type: integer 
+	Parameter SPIKE1R_Y_T bound to: 410 - type: integer 
+	Parameter SPIKE2R_X_L bound to: 279 - type: integer 
+	Parameter SPIKE2R_X_R bound to: 294 - type: integer 
+	Parameter SPIKE2R_Y_B bound to: 408 - type: integer 
+	Parameter SPIKE2R_Y_T bound to: 393 - type: integer 
+	Parameter SPIKE15D_Y_T bound to: 291 - type: integer 
+	Parameter SPIKE15D_Y_B bound to: 306 - type: integer 
+	Parameter SPIKE15D_X_R bound to: 509 - type: integer 
+	Parameter SPIKE15D_X_L bound to: 494 - type: integer 
+	Parameter SPIKE16D_Y_T bound to: 291 - type: integer 
+	Parameter SPIKE16D_Y_B bound to: 306 - type: integer 
+	Parameter SPIKE16D_X_R bound to: 468 - type: integer 
+	Parameter SPIKE16D_X_L bound to: 453 - type: integer 
+	Parameter SPIKE17D_Y_T bound to: 291 - type: integer 
+	Parameter SPIKE17D_Y_B bound to: 306 - type: integer 
+	Parameter SPIKE17D_X_R bound to: 359 - type: integer 
+	Parameter SPIKE17D_X_L bound to: 344 - type: integer 
+	Parameter SPIKE18D_Y_T bound to: 311 - type: integer 
+	Parameter SPIKE18D_Y_B bound to: 326 - type: integer 
+	Parameter SPIKE18D_X_R bound to: 251 - type: integer 
+	Parameter SPIKE18D_X_L bound to: 236 - type: integer 
+	Parameter SPIKE3R_X_L bound to: 10 - type: integer 
+	Parameter SPIKE3R_X_R bound to: 25 - type: integer 
+	Parameter SPIKE3R_Y_B bound to: 301 - type: integer 
+	Parameter SPIKE3R_Y_T bound to: 286 - type: integer 
+	Parameter SPIKE4R_X_L bound to: 10 - type: integer 
+	Parameter SPIKE4R_X_R bound to: 25 - type: integer 
+	Parameter SPIKE4R_Y_B bound to: 283 - type: integer 
+	Parameter SPIKE4R_Y_T bound to: 268 - type: integer 
+	Parameter SPIKE5R_X_L bound to: 10 - type: integer 
+	Parameter SPIKE5R_X_R bound to: 25 - type: integer 
+	Parameter SPIKE5R_Y_B bound to: 265 - type: integer 
+	Parameter SPIKE5R_Y_T bound to: 250 - type: integer 
+	Parameter SPIKE6R_X_L bound to: 10 - type: integer 
+	Parameter SPIKE6R_X_R bound to: 25 - type: integer 
+	Parameter SPIKE6R_Y_B bound to: 247 - type: integer 
+	Parameter SPIKE6R_Y_T bound to: 232 - type: integer 
+	Parameter SPIKE7R_X_L bound to: 279 - type: integer 
+	Parameter SPIKE7R_X_R bound to: 294 - type: integer 
+	Parameter SPIKE7R_Y_B bound to: 228 - type: integer 
+	Parameter SPIKE7R_Y_T bound to: 213 - type: integer 
+	Parameter SPIKE19D_Y_T bound to: 231 - type: integer 
+	Parameter SPIKE19D_Y_B bound to: 246 - type: integer 
+	Parameter SPIKE19D_X_L bound to: 123 - type: integer 
+	Parameter SPIKE19D_X_R bound to: 138 - type: integer 
+	Parameter SPIKE8U_Y_B bound to: 291 - type: integer 
+	Parameter SPIKE8U_Y_T bound to: 276 - type: integer 
+	Parameter SPIKE8U_X_L bound to: 183 - type: integer 
+	Parameter SPIKE8U_X_R bound to: 198 - type: integer 
+	Parameter SPIKE20D_Y_T bound to: 231 - type: integer 
+	Parameter SPIKE20D_Y_B bound to: 246 - type: integer 
+	Parameter SPIKE20D_X_L bound to: 243 - type: integer 
+	Parameter SPIKE20D_X_R bound to: 258 - type: integer 
+	Parameter SPIKE21D_Y_T bound to: 101 - type: integer 
+	Parameter SPIKE21D_Y_B bound to: 116 - type: integer 
+	Parameter SPIKE21D_X_L bound to: 589 - type: integer 
+	Parameter SPIKE21D_X_R bound to: 604 - type: integer 
+	Parameter SPIKE8R_X_L bound to: 279 - type: integer 
+	Parameter SPIKE8R_X_R bound to: 294 - type: integer 
+	Parameter SPIKE8R_Y_B bound to: 307 - type: integer 
+	Parameter SPIKE8R_Y_T bound to: 292 - type: integer 
+	Parameter SPIKE9R_X_L bound to: 509 - type: integer 
+	Parameter SPIKE9R_X_R bound to: 524 - type: integer 
+	Parameter SPIKE9R_Y_B bound to: 287 - type: integer 
+	Parameter SPIKE9R_Y_T bound to: 272 - type: integer 
+	Parameter SPIKE10L_X_R bound to: 551 - type: integer 
+	Parameter SPIKE10L_X_L bound to: 536 - type: integer 
+	Parameter SPIKE10L_Y_B bound to: 287 - type: integer 
+	Parameter SPIKE10L_Y_T bound to: 272 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'spike_rom' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/spike_rom.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/spike_rom.v:36]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/spike_rom.v:62]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/spike_rom.v:88]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/spike_rom.v:114]
+INFO: [Synth 8-256] done synthesizing module 'spike_rom' (5#1) [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/spike_rom.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'spikel_rom_bit' does not match port width (5) of module 'spike_rom' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:969]
+INFO: [Synth 8-638] synthesizing module 'display_rom' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/display_rom.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/display_rom.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/display_rom.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/display_rom.v:54]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/display_rom.v:64]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/display_rom.v:74]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/display_rom.v:84]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/display_rom.v:94]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/display_rom.v:104]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/display_rom.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/display_rom.v:124]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/display_rom.v:32]
+INFO: [Synth 8-256] done synthesizing module 'display_rom' (6#1) [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/display_rom.v:23]
+INFO: [Synth 8-638] synthesizing module 'letter_rom' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/letter_rom.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/letter_rom.v:36]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/letter_rom.v:47]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/letter_rom.v:33]
+INFO: [Synth 8-256] done synthesizing module 'letter_rom' (7#1) [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/letter_rom.v:23]
+WARNING: [Synth 8-3848] Net LED in module/entity self_anim does not have driver. [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:31]
+INFO: [Synth 8-256] done synthesizing module 'self_anim' (8#1) [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:24]
+WARNING: [Synth 8-350] instance 'an_unit' of module 'self_anim' requires 9 connections, but only 8 given [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_top.v:110]
+WARNING: [Synth 8-3848] Net RsTx in module/entity self_top does not have driver. [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_top.v:33]
+WARNING: [Synth 8-3848] Net keyboard_state in module/entity self_top does not have driver. [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_top.v:101]
+WARNING: [Synth 8-3848] Net reset_clk in module/entity self_top does not have driver. [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_top.v:45]
+INFO: [Synth 8-256] done synthesizing module 'self_top' (9#1) [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_top.v:24]
+WARNING: [Synth 8-3331] design letter_rom has unconnected port pix_x[9]
+WARNING: [Synth 8-3331] design letter_rom has unconnected port pix_x[8]
+WARNING: [Synth 8-3331] design letter_rom has unconnected port pix_x[7]
+WARNING: [Synth 8-3331] design letter_rom has unconnected port pix_x[6]
+WARNING: [Synth 8-3331] design letter_rom has unconnected port pix_x[5]
+WARNING: [Synth 8-3331] design letter_rom has unconnected port pix_x[4]
+WARNING: [Synth 8-3331] design letter_rom has unconnected port pix_y[9]
+WARNING: [Synth 8-3331] design letter_rom has unconnected port pix_y[8]
+WARNING: [Synth 8-3331] design letter_rom has unconnected port pix_y[7]
+WARNING: [Synth 8-3331] design letter_rom has unconnected port pix_y[6]
+WARNING: [Synth 8-3331] design letter_rom has unconnected port pix_y[5]
+WARNING: [Synth 8-3331] design letter_rom has unconnected port left[4]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port pix_x[9]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port pix_x[8]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port pix_x[7]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port pix_x[6]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port pix_x[5]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port pix_x[4]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port pix_y[9]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port pix_y[8]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port pix_y[7]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port pix_y[6]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port pix_y[5]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port SPIKED_X_L[4]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port SPIKEU_X_L[4]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port SPIKEL_X_L[4]
+WARNING: [Synth 8-3331] design spike_rom has unconnected port SPIKER_X_L[4]
+WARNING: [Synth 8-3331] design self_anim has unconnected port LED
+WARNING: [Synth 8-3331] design self_anim has unconnected port jmp_btn
+WARNING: [Synth 8-3331] design self_top has unconnected port RsTx
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 316.586 ; gain = 108.340
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEU_Y_T[4] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEU_Y_T[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEU_Y_T[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEU_Y_T[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEU_Y_T[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEU_X_L[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEU_X_L[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEU_X_L[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEU_X_L[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEL_Y_T[4] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEL_Y_T[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEL_Y_T[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEL_Y_T[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEL_Y_T[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEL_X_L[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEL_X_L[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEL_X_L[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKEL_X_L[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKER_Y_T[4] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKER_Y_T[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKER_Y_T[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKER_Y_T[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKER_Y_T[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKER_X_L[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKER_X_L[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKER_X_L[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbd:SPIKER_X_L[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:602]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKED_Y_T[4] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKED_Y_T[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKED_Y_T[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKED_Y_T[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKED_Y_T[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKED_X_L[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKED_X_L[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKED_X_L[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKED_X_L[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKEL_Y_T[4] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKEL_Y_T[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKEL_Y_T[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKEL_Y_T[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKEL_Y_T[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKEL_X_L[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKEL_X_L[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKEL_X_L[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKEL_X_L[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKER_Y_T[4] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKER_Y_T[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKER_Y_T[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKER_Y_T[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKER_Y_T[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKER_X_L[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKER_X_L[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKER_X_L[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbu:SPIKER_X_L[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:611]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKED_Y_T[4] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKED_Y_T[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKED_Y_T[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKED_Y_T[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKED_Y_T[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKED_X_L[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKED_X_L[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKED_X_L[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKED_X_L[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEU_Y_T[4] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEU_Y_T[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEU_Y_T[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEU_Y_T[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEU_Y_T[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEU_X_L[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEU_X_L[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEU_X_L[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEU_X_L[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEL_Y_T[4] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEL_Y_T[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEL_Y_T[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEL_Y_T[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEL_Y_T[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEL_X_L[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEL_X_L[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEL_X_L[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbl:SPIKEL_X_L[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:619]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKED_Y_T[4] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKED_Y_T[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKED_Y_T[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKED_Y_T[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKED_Y_T[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKED_X_L[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKED_X_L[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKED_X_L[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKED_X_L[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKEU_Y_T[4] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKEU_Y_T[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKEU_Y_T[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKEU_Y_T[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKEU_Y_T[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKEU_X_L[3] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKEU_X_L[2] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKEU_X_L[1] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKEU_X_L[0] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+WARNING: [Synth 8-3295] tying undriven pin sbr:SPIKER_Y_T[4] to constant 0 [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:627]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 316.586 ; gain = 108.340
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Roger/Documents/Homework/ECE415/self_proj/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Roger/Documents/Homework/ECE415/self_proj/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Roger/Documents/Homework/ECE415/self_proj/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/self_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/self_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 627.426 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 627.426 ; gain = 419.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 627.426 ; gain = 419.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 627.426 ; gain = 419.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "btn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "f0flag" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'spiker_rom_data_reg' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/spike_rom.v:89]
+WARNING: [Synth 8-327] inferring latch for variable 'spikel_rom_data_reg' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/spike_rom.v:115]
+WARNING: [Synth 8-327] inferring latch for variable 'spikeu_rom_data_reg' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/spike_rom.v:37]
+WARNING: [Synth 8-327] inferring latch for variable 'spiked_rom_data_reg' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/spike_rom.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/display_rom.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/letter_rom.v:37]
+WARNING: [Synth 8-327] inferring latch for variable 'victory_reg' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:1291]
+WARNING: [Synth 8-327] inferring latch for variable 'deaths_reg' [C:/Users/Roger/Documents/Homework/ECE415/self_proj/self_proj.srcs/sources_1/new/self_anim.v:1292]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 627.426 ; gain = 419.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'an_unit/s5d' (spike_rom) to 'an_unit/s17d'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 8     
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 206   
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 206   
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 102   
+	  16 Input     13 Bit        Muxes := 102   
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 38    
+	   8 Input      9 Bit        Muxes := 38    
+	  10 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 6     
+	  16 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 226   
+	   4 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 204   
+	  11 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module self_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module clk_50m_generator 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ps2_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 4     
+Module seg7decimal 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module spike_rom 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 4     
+	   3 Input      4 Bit       Adders := 4     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 2     
+	  16 Input     13 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 4     
+Module display_rom 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 9     
+	   8 Input      9 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module letter_rom 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   8 Input      9 Bit        Muxes := 1     
+	  10 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 1     
+Module self_anim 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 627.426 ; gain = 419.180
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design self_top has port dp driven by constant 1
+WARNING: [Synth 8-3331] design self_anim has unconnected port LED
+WARNING: [Synth 8-3331] design self_anim has unconnected port jmp_btn
+WARNING: [Synth 8-3331] design self_top has unconnected port LED
+WARNING: [Synth 8-3331] design self_top has unconnected port RsTx
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:01:44 . Memory (MB): peak = 627.426 ; gain = 419.180
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:01:42 ; elapsed = 00:01:44 . Memory (MB): peak = 627.426 ; gain = 419.180
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+----------------------+---------------+----------------+
+|Module Name | RTL Object           | Depth x Width | Implemented As | 
++------------+----------------------+---------------+----------------+
+|spike_rom   | spikeu_rom_data      | 32x13         | LUT            | 
+|spike_rom   | spiked_rom_data      | 32x13         | LUT            | 
+|self_anim   | sbd/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | sbd/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | sbu/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | sbu/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | sbl/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | sbl/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | sbr/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | sbr/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s1u/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s1u/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s2u/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s3u/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s4u/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s4u/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s5u/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s5u/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s6u/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s6u/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s7u/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s8u/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s8u/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s1d/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s1d/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s2d/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s3d/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s4d/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s5d/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s5d/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s6d/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s7d/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s8d/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s9d/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s9d/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s10d/spikeu_rom_data | 32x13         | LUT            | 
+|self_anim   | s10d/spiked_rom_data | 32x13         | LUT            | 
+|self_anim   | s11d/spikeu_rom_data | 32x13         | LUT            | 
+|self_anim   | s12d/spikeu_rom_data | 32x13         | LUT            | 
+|self_anim   | s13d/spikeu_rom_data | 32x13         | LUT            | 
+|self_anim   | s14d/spikeu_rom_data | 32x13         | LUT            | 
+|self_anim   | s15d/spikeu_rom_data | 32x13         | LUT            | 
+|self_anim   | s16d/spikeu_rom_data | 32x13         | LUT            | 
+|self_anim   | s18d/spikeu_rom_data | 32x13         | LUT            | 
+|self_anim   | s18d/spiked_rom_data | 32x13         | LUT            | 
+|self_anim   | s19d/spikeu_rom_data | 32x13         | LUT            | 
+|self_anim   | s19d/spiked_rom_data | 32x13         | LUT            | 
+|self_anim   | s20d/spikeu_rom_data | 32x13         | LUT            | 
+|self_anim   | s21d/spikeu_rom_data | 32x13         | LUT            | 
+|self_anim   | s21d/spiked_rom_data | 32x13         | LUT            | 
+|self_anim   | s1l/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s1l/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s2l/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s2l/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s3l/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s3l/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s4l/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s4l/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s5l/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s5l/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s6l/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s6l/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s7l/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s7l/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s8l/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s8l/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s9l/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s9l/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s10l/spikeu_rom_data | 32x13         | LUT            | 
+|self_anim   | s10l/spiked_rom_data | 32x13         | LUT            | 
+|self_anim   | s1r/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s1r/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s2r/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s2r/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s3r/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s3r/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s4r/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s4r/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s5r/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s5r/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s6r/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s6r/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s7r/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s7r/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s8r/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s8r/spiked_rom_data  | 32x13         | LUT            | 
+|self_anim   | s9r/spikeu_rom_data  | 32x13         | LUT            | 
+|self_anim   | s9r/spiked_rom_data  | 32x13         | LUT            | 
++------------+----------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'f0flag_reg[5]' (FDCE) to 'f0flag_reg[1]'
+INFO: [Synth 8-3886] merging instance 'f0flag_reg[1]' (FDCE) to 'f0flag_reg[2]'
+INFO: [Synth 8-3886] merging instance 'f0flag_reg[7]' (FDCE) to 'f0flag_reg[2]'
+INFO: [Synth 8-3886] merging instance 'f0flag_reg[3]' (FDCE) to 'f0flag_reg[2]'
+INFO: [Synth 8-3886] merging instance 'f0flag_reg[4]' (FDCE) to 'f0flag_reg[2]'
+INFO: [Synth 8-3886] merging instance 'f0flag_reg[6]' (FDCE) to 'f0flag_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\f0flag_reg[2] )
+INFO: [Synth 8-3886] merging instance 'an_unit/sbr/spikel_rom_data_reg[9]' (LD) to 'an_unit/sbr/spikel_rom_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbr/spikel_rom_data_reg[7]' (LD) to 'an_unit/sbr/spikel_rom_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbr/spikel_rom_data_reg[5]' (LD) to 'an_unit/sbr/spikel_rom_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbr/spikel_rom_data_reg[3]' (LD) to 'an_unit/sbr/spikel_rom_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbr/spikel_rom_data_reg[1]' (LD) to 'an_unit/sbr/spikel_rom_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbr/spikel_rom_data_reg[0]' (LD) to 'an_unit/sbl/spiker_rom_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbu/spikeu_rom_data_reg[11]' (LD) to 'an_unit/sbu/spikeu_rom_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbu/spikeu_rom_data_reg[10]' (LD) to 'an_unit/sbu/spikeu_rom_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbu/spikeu_rom_data_reg[9]' (LD) to 'an_unit/sbu/spikeu_rom_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbu/spikeu_rom_data_reg[8]' (LD) to 'an_unit/sbu/spikeu_rom_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbu/spikeu_rom_data_reg[12]' (LD) to 'an_unit/sbu/spikeu_rom_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbu/spikeu_rom_data_reg[7]' (LD) to 'an_unit/sbu/spikeu_rom_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbl/spiker_rom_data_reg[11]' (LD) to 'an_unit/sbl/spiker_rom_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbl/spiker_rom_data_reg[10]' (LD) to 'an_unit/s9l/spiker_rom_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbl/spiker_rom_data_reg[9]' (LD) to 'an_unit/s9l/spiker_rom_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbl/spiker_rom_data_reg[8]' (LD) to 'an_unit/s9l/spiker_rom_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbl/spiker_rom_data_reg[12]' (LD) to 'an_unit/s9l/spiker_rom_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbl/spiker_rom_data_reg[7]' (LD) to 'an_unit/s9l/spiker_rom_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbl/spiker_rom_data_reg[6]' (LD) to 'an_unit/s9l/spiker_rom_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbl/spiker_rom_data_reg[5]' (LD) to 'an_unit/s9l/spiker_rom_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbl/spiker_rom_data_reg[4]' (LD) to 'an_unit/s9l/spiker_rom_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbl/spiker_rom_data_reg[3]' (LD) to 'an_unit/s9l/spiker_rom_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbl/spiker_rom_data_reg[2]' (LD) to 'an_unit/s9l/spiker_rom_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbl/spiker_rom_data_reg[1]' (LD) to 'an_unit/s9l/spiker_rom_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'an_unit/sbl/spiker_rom_data_reg[0]' (LD) to 'an_unit/s9l/spiker_rom_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1u/spikeu_rom_data_reg[11]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1u/spikeu_rom_data_reg[10]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1u/spikeu_rom_data_reg[9]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1u/spikeu_rom_data_reg[8]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1u/spikeu_rom_data_reg[12]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1u/spikeu_rom_data_reg[7]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1u/spikeu_rom_data_reg[6]' (LD) to 'an_unit/s3u/spikeu_rom_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1u/spikeu_rom_data_reg[5]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1u/spikeu_rom_data_reg[4]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1u/spikeu_rom_data_reg[3]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1u/spikeu_rom_data_reg[2]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1u/spikeu_rom_data_reg[1]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1u/spikeu_rom_data_reg[0]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2d/spiked_rom_data_reg[11]' (LD) to 'an_unit/s1d/spiked_rom_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2d/spiked_rom_data_reg[10]' (LD) to 'an_unit/s1d/spiked_rom_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2d/spiked_rom_data_reg[9]' (LD) to 'an_unit/s1d/spiked_rom_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2d/spiked_rom_data_reg[8]' (LD) to 'an_unit/s1d/spiked_rom_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2d/spiked_rom_data_reg[12]' (LD) to 'an_unit/s1d/spiked_rom_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2d/spiked_rom_data_reg[7]' (LD) to 'an_unit/s1d/spiked_rom_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2d/spiked_rom_data_reg[6]' (LD) to 'an_unit/s4d/spiked_rom_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2d/spiked_rom_data_reg[5]' (LD) to 'an_unit/s1d/spiked_rom_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2d/spiked_rom_data_reg[4]' (LD) to 'an_unit/s1d/spiked_rom_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2d/spiked_rom_data_reg[3]' (LD) to 'an_unit/s1d/spiked_rom_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2d/spiked_rom_data_reg[2]' (LD) to 'an_unit/s1d/spiked_rom_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2d/spiked_rom_data_reg[1]' (LD) to 'an_unit/s1d/spiked_rom_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2d/spiked_rom_data_reg[0]' (LD) to 'an_unit/s1d/spiked_rom_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1d/spiked_rom_data_reg[11]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1d/spiked_rom_data_reg[10]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1d/spiked_rom_data_reg[9]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1d/spiked_rom_data_reg[8]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1d/spiked_rom_data_reg[12]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1d/spiked_rom_data_reg[7]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1d/spiked_rom_data_reg[6]' (LD) to 'an_unit/s4d/spiked_rom_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1d/spiked_rom_data_reg[5]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1d/spiked_rom_data_reg[4]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1d/spiked_rom_data_reg[3]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1d/spiked_rom_data_reg[2]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1d/spiked_rom_data_reg[1]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1d/spiked_rom_data_reg[0]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2l/spiker_rom_data_reg[11]' (LD) to 'an_unit/s2l/spiker_rom_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2l/spiker_rom_data_reg[10]' (LD) to 'an_unit/s2l/spiker_rom_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2l/spiker_rom_data_reg[8]' (LD) to 'an_unit/s2l/spiker_rom_data_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s2l/spiker_rom_data_reg[12] )
+INFO: [Synth 8-3886] merging instance 'an_unit/s2l/spiker_rom_data_reg[6]' (LD) to 'an_unit/s2l/spiker_rom_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s2l/spiker_rom_data_reg[4]' (LD) to 'an_unit/s2l/spiker_rom_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1l/spiker_rom_data_reg[11]' (LD) to 'an_unit/s1l/spiker_rom_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1l/spiker_rom_data_reg[10]' (LD) to 'an_unit/s1l/spiker_rom_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1l/spiker_rom_data_reg[8]' (LD) to 'an_unit/s1l/spiker_rom_data_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s1l/spiker_rom_data_reg[12] )
+INFO: [Synth 8-3886] merging instance 'an_unit/s1l/spiker_rom_data_reg[6]' (LD) to 'an_unit/s1l/spiker_rom_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s1l/spiker_rom_data_reg[4]' (LD) to 'an_unit/s1l/spiker_rom_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s4d/spiked_rom_data_reg[11]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s4d/spiked_rom_data_reg[10]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s4d/spiked_rom_data_reg[9]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s4d/spiked_rom_data_reg[8]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s4d/spiked_rom_data_reg[12]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s4d/spiked_rom_data_reg[7]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s4d/spiked_rom_data_reg[6]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s4d/spiked_rom_data_reg[5]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s4d/spiked_rom_data_reg[4]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s4d/spiked_rom_data_reg[3]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s4d/spiked_rom_data_reg[2]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s4d/spiked_rom_data_reg[1]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s4d/spiked_rom_data_reg[0]' (LD) to 'an_unit/s3d/spiked_rom_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s3u/spikeu_rom_data_reg[11]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s3u/spikeu_rom_data_reg[10]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s3u/spikeu_rom_data_reg[9]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s3u/spikeu_rom_data_reg[8]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s3u/spikeu_rom_data_reg[12]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s3u/spikeu_rom_data_reg[7]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'an_unit/s3u/spikeu_rom_data_reg[6]' (LD) to 'an_unit/s2u/spikeu_rom_data_reg[6]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s5l/spiker_rom_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s4l/spiker_rom_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s3l/spiker_rom_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s6l/spiker_rom_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s2r/spikel_rom_data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s9l/spiker_rom_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s9r/spikel_rom_data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s8r/spikel_rom_data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s4r/spikel_rom_data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s3r/spikel_rom_data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s7r/spikel_rom_data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s6r/spikel_rom_data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (an_unit/\s5r/spikel_rom_data_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (sbd/spiker_rom_data_reg[12]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiker_rom_data_reg[11]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiker_rom_data_reg[10]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiker_rom_data_reg[9]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiker_rom_data_reg[8]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiker_rom_data_reg[7]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiker_rom_data_reg[6]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiker_rom_data_reg[5]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiker_rom_data_reg[4]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiker_rom_data_reg[3]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiker_rom_data_reg[2]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiker_rom_data_reg[1]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiker_rom_data_reg[0]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikel_rom_data_reg[12]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikel_rom_data_reg[11]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikel_rom_data_reg[10]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikel_rom_data_reg[9]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikel_rom_data_reg[8]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikel_rom_data_reg[7]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikel_rom_data_reg[6]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikel_rom_data_reg[5]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikel_rom_data_reg[4]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikel_rom_data_reg[3]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikel_rom_data_reg[2]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikel_rom_data_reg[1]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikel_rom_data_reg[0]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikeu_rom_data_reg[12]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikeu_rom_data_reg[11]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikeu_rom_data_reg[10]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikeu_rom_data_reg[9]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikeu_rom_data_reg[8]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikeu_rom_data_reg[7]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikeu_rom_data_reg[6]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikeu_rom_data_reg[5]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikeu_rom_data_reg[4]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikeu_rom_data_reg[3]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikeu_rom_data_reg[2]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikeu_rom_data_reg[1]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spikeu_rom_data_reg[0]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiked_rom_data_reg[12]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiked_rom_data_reg[11]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiked_rom_data_reg[10]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiked_rom_data_reg[9]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiked_rom_data_reg[8]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbd/spiked_rom_data_reg[7]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiker_rom_data_reg[12]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiker_rom_data_reg[11]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiker_rom_data_reg[10]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiker_rom_data_reg[9]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiker_rom_data_reg[8]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiker_rom_data_reg[7]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiker_rom_data_reg[6]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiker_rom_data_reg[5]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiker_rom_data_reg[4]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiker_rom_data_reg[3]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiker_rom_data_reg[2]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiker_rom_data_reg[1]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiker_rom_data_reg[0]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikel_rom_data_reg[12]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikel_rom_data_reg[11]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikel_rom_data_reg[10]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikel_rom_data_reg[9]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikel_rom_data_reg[8]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikel_rom_data_reg[7]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikel_rom_data_reg[6]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikel_rom_data_reg[5]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikel_rom_data_reg[4]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikel_rom_data_reg[3]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikel_rom_data_reg[2]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikel_rom_data_reg[1]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikel_rom_data_reg[0]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikeu_rom_data_reg[12]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikeu_rom_data_reg[11]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikeu_rom_data_reg[10]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikeu_rom_data_reg[9]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikeu_rom_data_reg[8]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spikeu_rom_data_reg[7]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiked_rom_data_reg[12]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiked_rom_data_reg[11]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiked_rom_data_reg[10]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiked_rom_data_reg[9]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiked_rom_data_reg[8]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiked_rom_data_reg[7]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiked_rom_data_reg[6]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiked_rom_data_reg[5]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiked_rom_data_reg[4]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiked_rom_data_reg[3]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiked_rom_data_reg[2]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiked_rom_data_reg[1]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbu/spiked_rom_data_reg[0]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbl/spikel_rom_data_reg[12]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbl/spikel_rom_data_reg[11]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbl/spikel_rom_data_reg[10]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbl/spikel_rom_data_reg[9]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbl/spikel_rom_data_reg[8]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbl/spikel_rom_data_reg[7]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbl/spikel_rom_data_reg[6]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbl/spikel_rom_data_reg[5]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbl/spikel_rom_data_reg[4]) is unused and will be removed from module self_anim.
+WARNING: [Synth 8-3332] Sequential element (sbl/spikel_rom_data_reg[3]) is unused and will be removed from module self_anim.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 713.520 ; gain = 505.273
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 713.520 ; gain = 505.273
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:03 ; elapsed = 00:02:08 . Memory (MB): peak = 713.520 ; gain = 505.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:02:09 . Memory (MB): peak = 713.520 ; gain = 505.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:07 ; elapsed = 00:02:11 . Memory (MB): peak = 816.457 ; gain = 608.211
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:02:07 ; elapsed = 00:02:11 . Memory (MB): peak = 816.457 ; gain = 608.211
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:07 ; elapsed = 00:02:11 . Memory (MB): peak = 816.457 ; gain = 608.211
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:08 ; elapsed = 00:02:12 . Memory (MB): peak = 816.457 ; gain = 608.211
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:08 ; elapsed = 00:02:12 . Memory (MB): peak = 816.457 ; gain = 608.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:08 ; elapsed = 00:02:12 . Memory (MB): peak = 816.457 ; gain = 608.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:08 ; elapsed = 00:02:12 . Memory (MB): peak = 816.457 ; gain = 608.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:08 ; elapsed = 00:02:13 . Memory (MB): peak = 816.457 ; gain = 608.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:08 ; elapsed = 00:02:13 . Memory (MB): peak = 816.457 ; gain = 608.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    25|
+|3     |LUT1   |    41|
+|4     |LUT2   |   251|
+|5     |LUT3   |   235|
+|6     |LUT4   |   387|
+|7     |LUT5   |   374|
+|8     |LUT6   |  2109|
+|9     |MUXF7  |    27|
+|10    |FDCE   |   100|
+|11    |FDPE   |     9|
+|12    |FDRE   |    29|
+|13    |LD     |   189|
+|14    |IBUF   |     4|
+|15    |OBUF   |    30|
+|16    |OBUFT  |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+------------------+------+
+|      |Instance     |Module            |Cells |
++------+-------------+------------------+------+
+|1     |top          |                  |  3815|
+|2     |  an_unit    |self_anim         |  2981|
+|3     |    s14d     |spike_rom         |    18|
+|4     |    s16d     |spike_rom_0       |    18|
+|5     |    s18d     |spike_rom_1       |     8|
+|6     |    s19d     |spike_rom_2       |    10|
+|7     |    s1l      |spike_rom_3       |    10|
+|8     |    s21d     |spike_rom_4       |    10|
+|9     |    s2l      |spike_rom_5       |    10|
+|10    |    s2r      |spike_rom_6       |    10|
+|11    |    s2u      |spike_rom_7       |    10|
+|12    |    s3d      |spike_rom_8       |    12|
+|13    |    s3l      |spike_rom_9       |    10|
+|14    |    s3r      |spike_rom_10      |    10|
+|15    |    s4l      |spike_rom_11      |    10|
+|16    |    s4r      |spike_rom_12      |     7|
+|17    |    s4u      |spike_rom_13      |     8|
+|18    |    s5l      |spike_rom_14      |    10|
+|19    |    s5r      |spike_rom_15      |     7|
+|20    |    s5u      |spike_rom_16      |     8|
+|21    |    s6l      |spike_rom_17      |    10|
+|22    |    s6r      |spike_rom_18      |     7|
+|23    |    s6u      |spike_rom_19      |    13|
+|24    |    s7r      |spike_rom_20      |     8|
+|25    |    s8r      |spike_rom_21      |     8|
+|26    |    s8u      |spike_rom_22      |     8|
+|27    |    s9d      |spike_rom_23      |     8|
+|28    |    s9l      |spike_rom_24      |    14|
+|29    |    s9r      |spike_rom_25      |    14|
+|30    |    sbd      |spike_rom_26      |     8|
+|31    |    sbu      |spike_rom_27      |     8|
+|32    |  myclk      |clk_50m_generator |     2|
+|33    |  ps2_unit   |ps2_rx            |    59|
+|34    |  seg_unit   |seg7decimal       |    72|
+|35    |  vsync_unit |vga_sync          |   642|
++------+-------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:08 ; elapsed = 00:02:13 . Memory (MB): peak = 816.457 ; gain = 608.211
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2539 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:58 ; elapsed = 00:02:06 . Memory (MB): peak = 816.457 ; gain = 297.371
+Synthesis Optimization Complete : Time (s): cpu = 00:02:09 ; elapsed = 00:02:13 . Memory (MB): peak = 816.457 ; gain = 608.211
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 218 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 58 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 189 instances were transformed.
+  LD => LDCE: 131 instances
+  LD => LDCE (inverted pins: G): 58 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+181 Infos, 258 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:08 ; elapsed = 00:02:13 . Memory (MB): peak = 816.457 ; gain = 608.211
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 816.457 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 29 15:08:25 2016...
